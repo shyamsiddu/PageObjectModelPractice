@@ -1,0 +1,57 @@
+package com.sample.stepdefinitions;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class NameDemo {
+
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+
+System.setProperty("webdriver.chrome.driver", "D:\\3rdparty\\chrome\\chromedriver.exe");
+WebDriver driver = new ChromeDriver();
+driver.manage().window().maximize();
+
+driver.get("http://demo.guru99.com/test/facebook.html");
+
+
+driver.findElement(By.id("name")).click();
+	
+ 
+driver.findElement(By.name("id")).click();
+
+
+
+/html[1]/body[1]/div[3]/form[1]/div[2]/div[1]/div[2]/div[1]/div[1]/input[1]
+
+
+driver,findElement(By.linktext("REGISTER").click();
+
+//tag and name
+
+driver.findElement(By.cssSelector("input#email"));
+//tag and class
+driver.findElement(By.cssSelector("input.inputtext"));
+//by atribute
+input[name=lastname]
+
+//by tab
+
+driver.findElement(By.cssSelector(input.inputtext[tabindex=1]);
+
+//contains
+
+
+driver.findElement(By.cssSelector(input.inputtext[tabindex=1]);
+
+//
+driver.findelement(By.cssSelector(font:contains("Password:"))); 
+
+
+
+
+
+}
+
+}
